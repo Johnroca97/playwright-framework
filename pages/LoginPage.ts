@@ -2,10 +2,10 @@ import { Page, Locator } from '@playwright/test';
 import { UserData, URLS, API } from '../test-data/users';
 
 class LoginPage {
-  private page: Page;
-  private emailInput: Locator;
-  private passwordInput: Locator;
-  private loginButton: Locator;
+  private readonly page: Page;
+  private readonly emailInput: Locator;
+  private readonly passwordInput: Locator;
+  private readonly loginButton: Locator;
 
   constructor(page: Page) {
     this.page = page;
