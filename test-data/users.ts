@@ -4,7 +4,10 @@ export interface UserData {
 }
 
 export const URLS = {
-  get LOGIN()     { return process.env.BASE_URL ?? '' },
+  get LOGIN()     { 
+    console.log('BASE_URL:', process.env.BASE_URL);
+    return process.env.BASE_URL ?? '' 
+  },
   get DASHBOARD() { return `${process.env.BASE_URL}/#/dashboard/dash` }
 };
 
